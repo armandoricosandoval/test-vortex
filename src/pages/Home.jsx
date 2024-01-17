@@ -39,7 +39,7 @@ const Home = () => (
         <img
           className="w-1/2 h-[512px] mt-10"
           alt="Image"
-          src="/img/task-manager.svg"
+          src="task-manager.svg"
         />
       </div>
     </div>

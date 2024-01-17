@@ -1,9 +1,9 @@
 {
   "name": "test-vortex-app",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.1.0",
   "type": "module",
-  "homepage": "https://armandoricosandoval.github.io/testVortex",
+ 
   "scripts": {
     "dev": "vite",
     "build": "vite build",

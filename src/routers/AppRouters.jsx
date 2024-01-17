@@ -9,7 +9,7 @@ import Writers from "../pages/Writers";
 const AppRouters = () => {
   return (
     <>
-      <Router>
+      <Router basename="/test-vortex">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />

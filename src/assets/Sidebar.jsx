@@ -11,7 +11,7 @@ const Sidebar = () => {
       className="border-solid border-[#bcc1ca]  bg-white flex flex-col gap-8 w-48 h-[791px] items-start py-6 border"
     >
       <img
-        src="/img/Logoalterno2.png"
+        src="Logoalterno2.png"
         alt="Image1"
         id="Image1"
         className="ml-3 w-32"

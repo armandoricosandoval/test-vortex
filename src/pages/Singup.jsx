@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { signup } from "../redux/authActions";
 
 const Singup = () => {
@@ -71,7 +71,9 @@ const Singup = () => {
 
         <hr className="mb-4 border-t" />
         <div className="text-sm text-center  mx-auto text-black-600 hover:text-red-500">
-          <div className="font-bold text-[#6355d8] text-sm ">Sign In</div>
+          <Link to="/login" className="font-bold text-[#6355d8] text-sm ">
+            Sign In
+          </Link>
           <div className="font-normal text-[#171a1f] text-sm">
             Don't have an account?
           </div>

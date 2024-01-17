@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { loginAsync, loginWithGoogleAsync } from "../redux/authActions";
 
 const Login = () => {
@@ -13,9 +13,6 @@ const Login = () => {
   useEffect(() => {
     if (authState.success) {
       history("/profile-students");
-    }
-    if (authState.error) {
-      history("/sing-up");
     }
   }, [authState, history]);
 
@@ -91,7 +88,9 @@ const Login = () => {
         />
         <hr className="mb-4 border-t" />
         <div className="text-sm text-center mx-auto text-black-600 hover:text-red-500">
-          <div className="font-bold text-[#6355d8] text-sm">Sign up</div>
+          <Link to="/sing-up" className="font-bold text-[#6355d8] text-sm">
+            Sign up
+          </Link>
           <div className="font-normal text-[#171a1f] text-sm">
             Don't have an account?
           </div>
